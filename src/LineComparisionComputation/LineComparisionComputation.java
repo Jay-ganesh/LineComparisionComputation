@@ -12,9 +12,9 @@ public class LineComparisionComputation {
         System.out.println("Enter x2 co-ordinate : ");
         double x2 = sc.nextDouble();
         System.out.println("Enter y1 co-ordinate : ");
-        double y1 = sc.nextDouble();ii
+        double y1 = sc.nextDouble();
         System.out.println("Enter y2 co-ordinate : ");
-        double y2 = sc.nextDouble();qq
+        double y2 = sc.nextDouble();
 
         double length = calculateLength(x1,x2,y1,y2);
 
