@@ -18,7 +18,23 @@ public class LineComparisionComputation {
 
         Double length1 = calculateLength(x1,x2,y1,y2);
 
-        System.out.printf("Length of co-ordinates (%.2f,%.2f) & (%.2f,%.2f) is : (%.2f)",x1,y1,x2,y2,length1);
+        System.out.println("Enter x3 co-ordinate : ");
+        double x3 = sc.nextDouble();
+        System.out.println("Enter x4 co-ordinate : ");
+        double x4 = sc.nextDouble();
+        System.out.println("Enter y3 co-ordinate : ");
+        double y3 = sc.nextDouble();
+        System.out.println("Enter y4 co-ordinate : ");
+        double y4 = sc.nextDouble();
+
+        Double length2 = calculateLength(x3,x4,y3,y4);
+
+        if(length1.equals(length2)){
+            System.out.printf("Two lines are in equal length : %.2f",length1);
+        }
+        else {
+            System.out.printf("Length of the line between points is : %.2f,%2f", x1, x2, y1, y2, length1,length2);
+        }
     }
     public static double calculateLength(double x1, double x2, double y1, double y2){
         return Math.sqrt(Math.pow(x2-x1,2) + Math.pow(y2-y1,2));
