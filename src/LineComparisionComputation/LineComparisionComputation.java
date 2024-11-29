@@ -35,6 +35,18 @@ public class LineComparisionComputation {
         else {
             System.out.printf("Length of the line between points is : %.2f,%2f", x1, x2, y1, y2, length1,length2);
         }
+
+        int compareResult = length1.compareTo(length2);
+
+        if(compareResult == 0){
+            System.out.println("Two lines ane in equal length : "+length2);
+        }
+        else if (compareResult > 0) {
+            System.out.println("Line 1 is greatest : "+length1);
+        }
+        else{
+            System.out.println("Line 2 is greatest : "+length2);
+        }
     }
     public static double calculateLength(double x1, double x2, double y1, double y2){
         return Math.sqrt(Math.pow(x2-x1,2) + Math.pow(y2-y1,2));
